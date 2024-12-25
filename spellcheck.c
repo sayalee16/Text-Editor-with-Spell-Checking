@@ -4,7 +4,7 @@
 #include <string.h>
 #include <ctype.h>
 #include <math.h>
-
+#include "spellcheck.h"
 #define MAX_WORD_LENGTH 50
 #define MAX_SIZE 34003 // Represents the maximum size of the hash table- is a prime number and is chosen accordingly to have the ideal load factor 0.75
 #define MAX_SUGGESTIONS 10 // Represents the maximum number of suggestions for misspelled words
