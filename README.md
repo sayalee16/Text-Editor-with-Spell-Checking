@@ -12,5 +12,13 @@ A text editor written in C using the GTK interface, featuring spell-checking and
 8. Search
 9. Delete
 10. Highlight
+## Data Structures and Algorithms used
+1. Doubly link list
+2. Stack
+3. Hash Table
+4. Trie
+5. Array
+7. Levenshtein Algorithm
+8. File Handling
 ## Here is an image from our project:
-![Gtk Interface](./gtk-interface.png)
+![Gtk Interface](./gtk-window.jpeg)
