@@ -12,4 +12,5 @@ A text editor written in C using the GTK interface, featuring spell-checking and
 8. Search
 9. Delete
 10. Highlight
+## Here is an image from my project:
 ![Gtk Interface](./gtk-interface.png)
