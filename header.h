@@ -81,5 +81,14 @@ GtkWidget *word_count_label;
 int no_of_words = 0;
 int no_of_lines = 0;
 
+// trie for search functionality
+typedef struct trienode
+{
+    struct trienode *child[26];
+    bool isendofword;
+} trienode;
+
+typedef struct trienode *root;
+root r;
 
 
