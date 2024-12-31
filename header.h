@@ -91,4 +91,33 @@ typedef struct trienode
 typedef struct trienode *root;
 root r;
 
-
+void delete(const char *input_text);
+void on_delete_clicked(GtkTextBuffer *widget, gpointer user_data);
+void init_trie(root *r);
+void init(dictionary *d);
+void init_text_editor(Text *buffer);
+void init_array_of_selected_text();
+void init_stack();
+void count_lines_and_words(GtkTextBuffer *buffer, int *num_lines, int *num_words);
+void update_line_word_count(GtkTextBuffer *buffer, gpointer user_data);
+void on_redo_button_clicked(GtkWidget *widget, gpointer text_view);
+void replace(const char *input_text, char *selected_text);
+void on_replace_clicked(GtkTextBuffer *widget, gpointer user_data);
+word *create_word_node(char *token);
+void append_word(char *token);
+text *create_line_node(word *token);
+void append_line();
+void tokenize_words_from_input(char *input_ptr);
+void display_word_list();
+void save_file(GtkWidget *widget, gpointer user_data);
+void append_array_of_selected_text();
+void on_selection_changed(GtkTextBuffer *buffer, gpointer text_view);
+void on_highlight_clicked(GtkTextBuffer *buffer, GtkTextView *text_view);
+int StackEmpty();
+StackNode *pop_from_stack();
+StackNode *remove_newest_node();
+void push_into_stack(StackNode *newest_node);
+void on_undo_button_clicked(GtkWidget *widget, GtkTextView *text_view);
+char *get_full_text_from_list(text *head);
+void update_text_editor(GtkTextView *text_view);
+void update_file();
